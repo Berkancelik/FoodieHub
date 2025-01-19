@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodieHub.DataAccessLayer.Abstract
+namespace FoodieHub.BusinessLayer.Abstract
 {
-    public interface IAboutItemDal : IGenericDal<AboutItem>
+    public interface ISliderService : IGenericService<Slider>
     {
     }
 }
