@@ -12,6 +12,6 @@ namespace FoodieHub.EntityLayer.Concrete
         public string CustomerName { get; set; }
         public bool CustomerTitle { get; set; }
         public bool Comment { get; set; }
-        public bool ImageURL { get; set; }
+        public bool ImageUrl { get; set; }
     }
 }
