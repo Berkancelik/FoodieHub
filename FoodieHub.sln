@@ -5,6 +5,12 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodieHub.EntityLayer", "FoodieHub.EntityLayer\FoodieHub.EntityLayer.csproj", "{3717C901-4178-46FE-9EC3-778A678FC992}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodieHub.DataAccessLayer", "FoodieHub.DataAccessLayer\FoodieHub.DataAccessLayer.csproj", "{FFF28E3F-0BD5-453C-9039-140FEDC74AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodieHub.BusinessLayer", "FoodieHub.BusinessLayer\FoodieHub.BusinessLayer.csproj", "{15CC2775-A1C6-48A7-B34B-90118F9A08AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodieHub.PresentationLayer", "FoodieHub.PresentationLayer\FoodieHub.PresentationLayer.csproj", "{FCCED5DB-17F1-4CBF-8606-E4036FCF3C02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{3717C901-4178-46FE-9EC3-778A678FC992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3717C901-4178-46FE-9EC3-778A678FC992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3717C901-4178-46FE-9EC3-778A678FC992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF28E3F-0BD5-453C-9039-140FEDC74AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF28E3F-0BD5-453C-9039-140FEDC74AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF28E3F-0BD5-453C-9039-140FEDC74AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF28E3F-0BD5-453C-9039-140FEDC74AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15CC2775-A1C6-48A7-B34B-90118F9A08AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15CC2775-A1C6-48A7-B34B-90118F9A08AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15CC2775-A1C6-48A7-B34B-90118F9A08AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15CC2775-A1C6-48A7-B34B-90118F9A08AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCCED5DB-17F1-4CBF-8606-E4036FCF3C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCED5DB-17F1-4CBF-8606-E4036FCF3C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCED5DB-17F1-4CBF-8606-E4036FCF3C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCED5DB-17F1-4CBF-8606-E4036FCF3C02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

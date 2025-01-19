@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FoodieHub.EntityLayer.Concrete
 {
-    internal class Feature
+    public class Feature
     {
         public int Id { get; set; }
         public string Title { get; set; }
