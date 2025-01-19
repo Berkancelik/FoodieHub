@@ -8,7 +8,7 @@
 <div class="container">
     <div class="page-inner">
         <div class="page-header">
-            <h3 class="fw-bold mb-3">Products</h3>
+            <h3 class="fw-bold mb-3">Ürünler</h3>
             <ul class="breadcrumbs mb-3">
                 <li class="nav-home">
                     <a href="#">
@@ -19,13 +19,13 @@
                     <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Add Product</a>
+                    <a href="#">Ürün Ekle</a>
                 </li>
                 <li class="separator">
                     <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#">New Create Product</a>
+                    <a href="#">Yeni Ürün Ekle</a>
                 </li>
             </ul>
         </div>
@@ -35,30 +35,30 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Add Product Panel</div>
+                        <div class="card-title">AÜrün Ekleme Paneli</div>
                     </div>
                     <div class="card-body">
 
                         <form method="post">
-                            <label>Product Name</label>
+                            <label>Ürün Adı</label>
                             <input type="text" asp-for="Name" class="form-control" />
                             <br />
-                            <label>Product Stock</label>
+                            <label>Ürün Stoğu</label>
                             <input type="number" asp-for="Stock" class="form-control" />
                             <br />
-                            <label>Product Price</label>
+                            <label>Ürün Fiyatı</label>
                             <input type="text" asp-for="Price" class="form-control" />
                             <br />
-                            <label>Product Image Url</label>
+                            <label>Ürün Resmi</label>
                             <input type="text" asp-for="ImageUrl" class="form-control" />
                             <br />
-                            <label>Product Description</label>
+                            <label>Ürün Açıklaması</label>
                             <input type="text" asp-for="Description" class="form-control" />
                             <br />
-                            <label>Product Category</label>
+                            <label>Ürün Kategorisi</label>
                             <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.categories"></select>
                             <br />
-                            <button class="btn btn-primary">Create Product</button>
+                            <button class="btn btn-primary">Ürünü Oluştur</button>
                         </form>
 
                     </div>

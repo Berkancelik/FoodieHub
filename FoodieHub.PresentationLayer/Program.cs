@@ -43,7 +43,7 @@ app.UseStatusCodePages(async x =>
 {
     if (x.HttpContext.Response.StatusCode == 404)
     {
-        x.HttpContext.Response.Redirect("/ErrorPages/ErrorPage404/");
+        x.HttpContext.Response.Redirect("/ErrorPages/Index/");
     };
 });
 
@@ -65,6 +65,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Default}/{action=Index}/{id?}");
 
 app.Run();

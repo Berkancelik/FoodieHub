@@ -20,8 +20,4 @@
     <ProjectReference Include="..\FoodieHub.DTOLayer\FoodieHub.DTOLayer.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ViewComponents\DefaultViewComponents\" />
-  </ItemGroup>
-
 </Project>
