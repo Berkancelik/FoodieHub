@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace FoodieHub.EntityLayer.Concrete
 {
-    public class Category
+    public class Review
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public bool Status { get; set; }
+        public string CustomerName { get; set; }
+        public bool CustomerTitle { get; set; }
+        public bool Comment { get; set; }
+        public bool ImageURL { get; set; }
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace FoodieHub.EntityLayer.Concrete
 {
-    public class Category
+    public class Slider
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public bool Status { get; set; }
+        public string Title { get; set; }
+        public string ImageURL { get; set; }
     }
 }
