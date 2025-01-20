@@ -1,8 +1,10 @@
-﻿@model Product
+﻿@model List<Product>
+
 @{
-    ViewData["Title"] = "CreateProduct";
+    ViewData["Title"] = "ProductListWithCategory";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
+
 
 
 <div class="container">
@@ -19,13 +21,13 @@
                     <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Ürün Ekle</a>
+                    <a href="#">Products List</a>
                 </li>
                 <li class="separator">
                     <i class="icon-arrow-right"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Yeni Ürün Ekle</a>
+                    <a href="#">Kategorileri İle Birlikte Ürün Listesi </a>
                 </li>
             </ul>
         </div>
@@ -35,32 +37,41 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Add Product Panel</div>
+                        <div class="card-title">Ürün Listesi</div>
                     </div>
                     <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Ürün Name</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Kategori Id</th>
+                                    <th scope="col">Kategori Adı</th>
+                                    <th scope="col">Sil</th>
+                                    <th scope="col">Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Name</td>
+                                        <td>@item.Stock</td>
+                                        <td>@item.Price</td>
+                                        <td>@item.CategoryId</td>
+                                        <td>@item.Category.Name</td>
+                                        <td><a href="/Products/DeleteProduct/@item.Id" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/Products/UpdateProduct/@item.Id" class="btn btn-success">Güncelle</a></td>
+                                    </tr>
 
-                        <form method="post">
-                            <label>Ürün Name</label>
-                            <input type="text" asp-for="Name" class="form-control" />
-                            <br />
-                            <label>Ürün Stoğu</label>
-                            <input type="number" asp-for="Stock" class="form-control" />
-                            <br />
-                            <label>Ürün Fiyatı</label>
-                            <input type="text" asp-for="Price" class="form-control" />
-                            <br />
-                            <label>Ürün Image Url</label>
-                            <input type="text" asp-for="ImageUrl" class="form-control" />
-                            <br />
-                            <label>Ürün Açıklaması</label>
-                            <input type="text" asp-for="Description" class="form-control" />
-                            <br />
-                            <label>Ürün Kategorisi</label>
-                            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.categories"></select>
-                            <br />
-                            <button class="btn btn-primary">Ürün Oluştur</button>
-                        </form>
+                                }
 
+                            </tbody>
+                        </table>
+                        <a href="/Products/CreateProduct/" class="btn btn-primary">Yeni Ürün Ekle</a>
                     </div>
                 </div>
 
@@ -69,3 +80,5 @@
         </div>
     </div>
 </div>
+
+

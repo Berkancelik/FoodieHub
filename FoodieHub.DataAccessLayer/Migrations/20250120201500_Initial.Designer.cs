@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FoodieHub.DataAccessLayer.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250119205625_Initial")]
+    [Migration("20250120201500_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
